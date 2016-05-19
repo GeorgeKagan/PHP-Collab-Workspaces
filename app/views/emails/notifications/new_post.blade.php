@@ -1,0 +1,1 @@
+A new post added to the workspace {{ $group['name'] }} you are member of. Please visit <a href="{{ $group['url'] }}" target="_blank">{{ $group['name'] }}</a>.

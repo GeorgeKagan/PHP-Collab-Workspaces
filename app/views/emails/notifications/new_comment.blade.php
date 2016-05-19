@@ -1,0 +1,1 @@
+A new comment added to a post {{ $post['label'] }} in workspace {{ $group['name'] }}. Please visit <a href="{{ $group['url'] }}" target="_blank">{{ $group['name'] }}</a>.

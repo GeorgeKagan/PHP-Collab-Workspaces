@@ -1,0 +1,51 @@
+{
+  "css": {
+    "main": [
+      "global.css",
+      "homepage.css",
+      "responsive.css",
+      "sidebar.css"
+    ],
+    "bower": [
+      "annotorious-js/css/annotorious.css",
+      "bootstrap/dist/css/bootstrap.min.css",
+      "colorbox/example3/colorbox.css",
+      "dropzone/dist/dropzone.css",
+      "fancybox/source/jquery.fancybox.css",
+      "font-awesome/css/font-awesome.min.css",
+      "sweetalert/lib/sweet-alert.css"
+    ]
+  },
+  "javascript": {
+    "main": [
+      "ac-config.js",
+      "sockets.js",
+      "chat.js",
+      "global.js",
+      "handlebars-helpers.js",
+      "image-view.js",
+      "post.js",
+      "post-adder.js",
+      "responsive.js",
+      "utils.js",
+      "whiteboard.js",
+      "workspace.js"
+    ],
+    "bower": [
+      "jquery/dist/jquery.min.js",
+      "annotorious-js/annotorious.debug.js",
+      "autogrow/autogrow.min.js",
+      "bootstrap/dist/js/bootstrap.min.js",
+      "colorbox/jquery.colorbox-min.js",
+      "dropzone/dist/min/dropzone.min.js",
+      "eventEmitter/EventEmitter.min.js",
+      "fancybox/source/jquery.fancybox.pack.js",
+      "handlebars/handlebars.min.js",
+      "isotope/dist/isotope.pkgd.min.js",
+      "masonry/dist/masonry.pkgd.min.js",
+      "matches-selector/matches-selector.js",
+      "socket.io-client/dist/socket.io.min.js",
+      "sweetalert/lib/sweet-alert.min.js"
+    ]
+  }
+}

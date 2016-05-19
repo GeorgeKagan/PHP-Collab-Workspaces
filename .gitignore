@@ -1,0 +1,16 @@
+/bootstrap/compiled.php
+/vendor
+/public/bower_components
+composer.phar
+composer.lock
+.DS_Store
+Thumbs.db
+.idea/
+public/user_content/
+node_modules/
+_ide_helper.php
+app/config/dev/database.php
+app/config/database.php
+public/build/
+public/fonts/
+public/bower_components/

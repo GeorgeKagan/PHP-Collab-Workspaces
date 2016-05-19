@@ -1,0 +1,110 @@
+@import 'less-stuff';
+
+#sidebar-wrapper {
+  padding-left: 0;
+}
+#sidebar {
+  position: fixed;
+  background: @paleviolet;
+  color: #D8D8DA;
+  height: 100%;
+  margin: -31px 0 0 -15px;
+  width: 304px;
+  float: left;
+  min-height: 1px;
+}
+#sidebar-inner {
+  padding: 30px 20px 20px 30px;
+  text-shadow: 0px 0px 1px @black;
+  h2 {
+    color: @paleviolet2;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+    cursor: default;
+  }
+  .icon-links {
+    padding: 5px 0 0 5px;
+    a {
+      color: #FFF;
+      padding: 7px 0 7px 5px;
+      display: block;
+      margin: 5px 0;
+      span {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+        box-shadow: 0px 1px 1px @gray3;
+        text-align: center;
+        line-height: 23px;
+        margin: 0 5px 0 0;
+      }
+    }
+    a.icon-explore {
+      padding-left: 37px;
+    }
+    a.selected, a:hover {
+      background-color: @paleviolet2;
+      margin-right: -20px;
+      text-decoration: none;
+    }
+  }
+  .report-a-bug {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    padding: 0 0 0 30px;
+    a {
+      color: @white;
+    }
+  }
+}
+
+.icon-workspaces {
+  background: url(../img/sidebar/workspaces_icon.png) 0 0 no-repeat;
+  padding: 0 0 2px 50px;
+}
+.icon-explore {
+  background: url(../img/sidebar/explore_icon_light.png) 3px 4px no-repeat;
+}
+.icon-diduknow {
+  background: url(../img/sidebar/info_icon.png) 5px 0 no-repeat;
+  padding: 0 0 11px 50px;
+}
+
+.btn-with-icon {
+  background: @gray3 url(../img/sidebar/new_workspace_icon.png) 17px 16px no-repeat;
+  padding: 13px 20px;
+  margin: 30px 10px 40px 0;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  color: #FFF;
+}
+
+.separated-list {
+  div {
+    border-bottom: 1px solid @paleviolet2;
+    padding: 10px 15px 20px 15px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 23px;
+    color: @gray;
+  }
+  div:last-child {
+    border: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .has-one-workspace {
+    display: none;
+  }
+
+  #main-content {
+    left: 0;
+    right: 310px;
+  }
+}

@@ -1,0 +1,125 @@
+@import 'less-stuff';
+
+html {
+  @media (max-width: 768px) {
+    overflow: visible !important;
+  }
+}
+
+body {
+  // A transitional state for 1280px resolutions to show the chat (in a smaller form)
+  @media (min-width: 1267px) and (max-width: 1283px) {
+    #main-content {
+      right: 295px;
+    }
+
+    #chat-wrapper {
+      width: 273px;
+    }
+  }
+
+  // Hide chat and expand grid
+  @media (max-width: 1266px) {
+    #main-content {
+      right: 0px;
+    }
+
+    #chat-wrapper {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    #site-header {
+      #site-logo {
+        margin: 0 10px 0 0;
+        img {
+          margin: 0 !important;
+        }
+      }
+      .pull-left {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .pull-right {
+        margin-right: 10px;
+        margin-left: 0;
+      }
+    }
+
+    #sidebar-wrapper {
+      margin: 20px 15px;
+    }
+
+    #sidebar {
+      position: static;
+      float: none;
+      width: 100%;
+      border-radius: 2px;
+      margin: -31px 0 0 0;
+      .icon-links a {
+        display: inline-block;
+        padding: 7px;
+        width: 100%;
+      }
+      .btn-with-icon,
+      .icon-diduknow,
+      .separated-list,
+      .report-a-bug {
+        display: none;
+      }
+      #sidebar-inner {
+        padding: 20px 15px 0 15px;
+        h2 {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    #mega-adder {
+      display: none !important;
+    }
+
+    .post-image-comments, .post-normal-comments {
+      height: auto !important;
+    }
+    .comment {
+      position: relative;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    // uservoice
+    .uv-icon.uv-bottom-right {
+      left: 12px;
+      right: auto;
+    }
+  }
+
+  @media (max-width: 666px) {
+    .wall-post {
+      width: 100% !important;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      .post-image-wrapper {
+        background: @black;
+        .post-image {
+          width: auto;
+          max-width: 100%;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .idc-logo {
+      display: none;
+    }
+  }
+}
